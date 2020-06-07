@@ -1,29 +1,32 @@
 package com.zerobank.utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
+/**
+ * reads the properties file configuration.properties
+ */
 public class ConfigurationReader {
 
     private static Properties properties;
 
-  static   {
+    static {
 
-      try {
-          String path="configuration.properties";
-          FileInputStream input = new FileInputStream(path);
-          properties= new Properties();
-          properties.load(input);
-          input.close();
-      } catch (Exception e) {
-          e.printStackTrace();
-      }
+        try {
+            String path = "configuration.properties";
+            FileInputStream input = new FileInputStream(path);
+            properties = new Properties();
+            properties.load(input);
 
-  }
+            input.close();
+        } catch (Exception e) {
+            e.printStackTrace();
 
+        }
+    }
 
-  public static String Get(String Value){
-      return properties.getProperty(Value);
-  }
+    public static String get(String keyName) {
+        return properties.getProperty(keyName);
+    }
+
 }
