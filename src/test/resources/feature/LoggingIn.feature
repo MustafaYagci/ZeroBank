@@ -1,9 +1,8 @@
-
+@login
 Feature: Login
 
   Scenario: Login Succesfully
     Given User enter the valid username and password
-    When  User should able to login
     Then  Account Summary page should be displayed
 
     Scenario: Login Invalid Credentials

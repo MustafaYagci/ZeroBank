@@ -3,17 +3,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-07T21:12:53.345Z",
+        "start_timestamp": "2020-06-08T13:31:35.891Z",
         "line": 3,
-        "name": "Account Summary",
+        "name": "Pay Bills",
         "description": "",
-        "id": "account-feature;account-summary",
+        "id": "pay-bills;pay-bills",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9009240600,
+              "duration": 9566159900,
               "status": "passed"
             },
             "line": 4,
@@ -25,100 +25,93 @@
           },
           {
             "result": {
-              "duration": 7869600,
+              "duration": 2156756000,
               "status": "passed"
             },
             "line": 5,
-            "name": "account summary page should have the title \"Zero - Account Summary\"",
+            "name": "User shold able to click \"Pay Bills\" module",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Summary\"",
-                  "offset": 43
+                  "val": "\"Pay Bills\"",
+                  "offset": 25
                 }
               ],
-              "location": "com.zerobank.step_definition.AccounSummaryStepDefs.account_summary_page_should_have_the_title(java.lang.String)"
+              "location": "com.zerobank.step_definition.AccountActivityStepDefs.user_shold_able_to_click_module(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat io.cucumber.datatable.DataTableTypeRegistryTableConverter.convert(DataTableTypeRegistryTableConverter.java:86)\r\n\tat io.cucumber.datatable.DataTable.convert(DataTable.java:360)\r\n\tat io.cucumber.core.stepexpression.StepExpressionFactory.lambda$createExpression$4(StepExpressionFactory.java:63)\r\n\tat io.cucumber.core.stepexpression.DataTableArgument.getValue(DataTableArgument.java:19)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:47)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "status": "failed"
+              "duration": 2019973200,
+              "status": "passed"
             },
             "line": 6,
-            "name": "account summary page must have following modules",
+            "name": "account summary page should have the title \"Zero - Pay Bills\"",
             "match": {
-              "location": "com.zerobank.step_definition.AccounSummaryStepDefs.account_summary_page_must_have_following_modules(java.util.ArrayList\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"Zero - Pay Bills\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountSummaryStepDef.account_summary_page_should_have_the_title(java.lang.String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Cash Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Investment Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Credit Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Loan Accounts"
-                ]
-              }
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 723994300,
+              "status": "passed"
             },
-            "line": 12,
-            "name": "Credit Accounts table must have columns",
+            "line": 7,
+            "name": "When user successful Pay operation, \"The payment was successfully submitted.\" should displayed.",
             "match": {
-              "location": "com.zerobank.step_definition.AccounSummaryStepDefs.credit_Accounts_table_must_have_columns(java.util.ArrayList\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"The payment was successfully submitted.\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.zerobank.step_definition.PayBillsStepDefs.when_user_successful_Pay_operation_should_displayed(java.lang.String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Account"
-                ]
-              },
-              {
-                "cells": [
-                  "Credit Card"
-                ]
-              },
-              {
-                "cells": [
-                  "Balance"
-                ]
-              }
-            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027payee\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.97)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6JUMBE3\u0027, ip: \u0027192.168.1.21\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\musta\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 75f8652e28167fd490c08d6c3372b1a5\n*** Element info: {Using\u003dname, value\u003dpayee}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.zerobank.pages.PayBillsPage.MakePayments(PayBillsPage.java:11)\r\n\tat com.zerobank.step_definition.PayBillsStepDefs.when_user_tries_to_make_a_payment_without_entering_the_amount_or_date_should_be_displayed(PayBillsStepDefs.java:22)\r\n\tat ✽.When user tries to make a payment without entering the amount or date, \"Please fill out this field message!\" should be displayed.(file:///C:/Users/musta/IdeaProjects/zerobank_automation/src/test/resources/feature/PayBills.feature:8)\r\n",
+              "duration": 20059600,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "When user tries to make a payment without entering the amount or date, \"Please fill out this field message!\" should be displayed.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field message!\"",
+                  "offset": 71
+                }
+              ],
+              "location": "com.zerobank.step_definition.PayBillsStepDefs.when_user_tries_to_make_a_payment_without_entering_the_amount_or_date_should_be_displayed(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AS"
+            "name": "@pb"
           }
         ]
       }
     ],
-    "name": "Account Feature",
+    "name": "Pay Bills",
     "description": "",
-    "id": "account-feature",
+    "id": "pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/feature/AccountSummary.feature",
+    "uri": "file:src/test/resources/feature/PayBills.feature",
     "tags": [
       {
-        "name": "@AS",
+        "name": "@pb",
         "type": "Tag",
         "location": {
           "line": 1,

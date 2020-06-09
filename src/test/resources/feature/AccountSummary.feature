@@ -1,4 +1,4 @@
-@AS
+@as
 Feature: Account Feature
   Scenario: Account Summary
     Given User enter the valid username and password
