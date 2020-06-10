@@ -3,20 +3,20 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-08T13:31:35.891Z",
-        "line": 3,
-        "name": "Pay Bills",
+        "start_timestamp": "2020-06-09T20:31:20.785Z",
+        "line": 44,
+        "name": "Checking Savings redirected",
         "description": "",
-        "id": "pay-bills;pay-bills",
+        "id": "navigating-to-a-specific-accounts-in-accounts-activity;checking-\u003clink\u003e-redirected;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9566159900,
+              "duration": 9983907700,
               "status": "passed"
             },
-            "line": 4,
+            "line": 37,
             "name": "User enter the valid username and password",
             "match": {
               "location": "com.zerobank.step_definition.LoginStepDefs.user_enter_the_valid_username_and_password()"
@@ -25,93 +25,417 @@
           },
           {
             "result": {
-              "duration": 2156756000,
+              "duration": 883062900,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User shold able to click \"Pay Bills\" module",
+            "line": 38,
+            "name": "the user click \"Savings\" link on the Account Summary page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Pay Bills\"",
-                  "offset": 25
+                  "val": "\"Savings\"",
+                  "offset": 15
                 }
               ],
-              "location": "com.zerobank.step_definition.AccountActivityStepDefs.user_shold_able_to_click_module(java.lang.String)"
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_user_click_link_on_the_Account_Summary_page(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2019973200,
+              "duration": 10948900,
               "status": "passed"
             },
-            "line": 6,
-            "name": "account summary page should have the title \"Zero - Pay Bills\"",
+            "line": 39,
+            "name": "the \"Account Activity\" page should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Pay Bills\"",
-                  "offset": 43
+                  "val": "\"Account Activity\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.zerobank.step_definition.AccountSummaryStepDef.account_summary_page_should_have_the_title(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 723994300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "When user successful Pay operation, \"The payment was successfully submitted.\" should displayed.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"The payment was successfully submitted.\"",
-                  "offset": 36
-                }
-              ],
-              "location": "com.zerobank.step_definition.PayBillsStepDefs.when_user_successful_Pay_operation_should_displayed(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027payee\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.97)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-6JUMBE3\u0027, ip: \u0027192.168.1.21\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\musta\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57174}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 75f8652e28167fd490c08d6c3372b1a5\n*** Element info: {Using\u003dname, value\u003dpayee}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.zerobank.pages.PayBillsPage.MakePayments(PayBillsPage.java:11)\r\n\tat com.zerobank.step_definition.PayBillsStepDefs.when_user_tries_to_make_a_payment_without_entering_the_amount_or_date_should_be_displayed(PayBillsStepDefs.java:22)\r\n\tat ✽.When user tries to make a payment without entering the amount or date, \"Please fill out this field message!\" should be displayed.(file:///C:/Users/musta/IdeaProjects/zerobank_automation/src/test/resources/feature/PayBills.feature:8)\r\n",
-              "duration": 20059600,
-              "status": "failed"
-            },
-            "line": 8,
-            "name": "When user tries to make a payment without entering the amount or date, \"Please fill out this field message!\" should be displayed.",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Please fill out this field message!\"",
-                  "offset": 71
-                }
-              ],
-              "location": "com.zerobank.step_definition.PayBillsStepDefs.when_user_tries_to_make_a_payment_without_entering_the_amount_or_date_should_be_displayed(java.lang.String)"
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_page_should_be_displayed(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 737740000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Account drop down should have \"Savings\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@pb"
+            "name": "@aa1"
+          },
+          {
+            "name": "@totalaa"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-09T20:31:32.458Z",
+        "line": 45,
+        "name": "Checking Brokerage redirected",
+        "description": "",
+        "id": "navigating-to-a-specific-accounts-in-accounts-activity;checking-\u003clink\u003e-redirected;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8194351700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter the valid username and password",
+            "match": {
+              "location": "com.zerobank.step_definition.LoginStepDefs.user_enter_the_valid_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 759002500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user click \"Brokerage\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_user_click_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14939300,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the \"Account Activity\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 736598800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Account drop down should have \"Brokerage\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aa1"
+          },
+          {
+            "name": "@totalaa"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-09T20:31:42.171Z",
+        "line": 46,
+        "name": "Checking Checking redirected",
+        "description": "",
+        "id": "navigating-to-a-specific-accounts-in-accounts-activity;checking-\u003clink\u003e-redirected;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9454699000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter the valid username and password",
+            "match": {
+              "location": "com.zerobank.step_definition.LoginStepDefs.user_enter_the_valid_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 744001100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user click \"Checking\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_user_click_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6985200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the \"Account Activity\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1294938600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Account drop down should have \"Checking\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aa1"
+          },
+          {
+            "name": "@totalaa"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-09T20:31:53.679Z",
+        "line": 47,
+        "name": "Checking Credit Card redirected",
+        "description": "",
+        "id": "navigating-to-a-specific-accounts-in-accounts-activity;checking-\u003clink\u003e-redirected;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9388436400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter the valid username and password",
+            "match": {
+              "location": "com.zerobank.step_definition.LoginStepDefs.user_enter_the_valid_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 634102400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user click \"Credit Card\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_user_click_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7040600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the \"Account Activity\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 736925300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Account drop down should have \"Credit Card\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aa1"
+          },
+          {
+            "name": "@totalaa"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-09T20:32:04.454Z",
+        "line": 48,
+        "name": "Checking Loan redirected",
+        "description": "",
+        "id": "navigating-to-a-specific-accounts-in-accounts-activity;checking-\u003clink\u003e-redirected;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9009008500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enter the valid username and password",
+            "match": {
+              "location": "com.zerobank.step_definition.LoginStepDefs.user_enter_the_valid_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 715228300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user click \"Loan\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_user_click_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5983500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the \"Account Activity\" page should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 4
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.the_page_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 719673200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Account drop down should have \"Loan\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.step_definition.AccountActivityNavigationStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@aa1"
+          },
+          {
+            "name": "@totalaa"
           }
         ]
       }
     ],
-    "name": "Pay Bills",
+    "name": "Navigating to a specific accounts in Accounts Activity",
     "description": "",
-    "id": "pay-bills",
+    "id": "navigating-to-a-specific-accounts-in-accounts-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/feature/PayBills.feature",
+    "uri": "file:src/test/resources/feature/AccountActivityNavigation.feature",
     "tags": [
       {
-        "name": "@pb",
+        "name": "@aa1",
         "type": "Tag",
         "location": {
           "line": 1,
