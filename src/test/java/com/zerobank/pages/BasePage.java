@@ -13,4 +13,9 @@ public class BasePage {
     public void Modules(String moduleName){
         Driver.get().findElement(By.xpath("//a[.='"+moduleName+"']")).click();
     }
+
+    public void Part(String moduleName){
+        Driver.get().findElement(By.xpath("//a[.='"+moduleName+"']")).click();
+    }
+
 }
