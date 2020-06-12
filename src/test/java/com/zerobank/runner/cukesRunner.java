@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature/",
         glue = "com/zerobank/step_definition",
         dryRun = false,
-        tags = "@Type"
+        tags = "@payee"
 )
 
 public class cukesRunner {
